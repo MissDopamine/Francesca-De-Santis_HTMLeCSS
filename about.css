@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=UnifrakturMaguntia&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.max-width  {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+
+/*NAVBAR*/
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999; /*per far restare la NAVBAR FISSA ANCHE DURANTE LO SCROLLING*/
+  background: #141414; /*deep grey*/
+  font-family: "Poppins", sans-serif;
+  padding: 15px 0;
+  margin: auto;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: /*uppercase*/;
+  font-size: 18px;
+  font-weight: 400;
+}
+/*ANIMAZIONE SOTTOLINEATURE ELEMENTI NAVBAR*/
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0; /*percentuale di quanto è mostrata la barra colorata sotto le parole*/
+  background: #2b48ad; /*light cobalto (20,52,164 RGB)*/
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+
+
+/*ABOUT SECTION STYLING*/
+section {
+  padding: 100px 0 50px 0;
+  font-family: "Poppins", sans-serif; /*MAIN ROOT DEL FONT-stabilisce il font per tutta la section*/
+}
+.about #title1 {
+  text-align: center;/*relative*/
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+}
+.about .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+/*left column*/
+.about .about-content .left {
+  width: 30%;
+
+}
+.about .about-content .left img {
+  height: 370px;
+  width: %;
+  object-fit: cover;
+  border-radius: 500px; /*circle form*/
+}
+button {
+  border: none;
+  border-radius: 40px;
+  margin: 30px;
+}
+
+.about .about-content .left a {
+  display: inline-block;
+  background: #2b48ad; /*light cobalto*/
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  border-radius: 40px;
+  border: 2px solid #2b48ad;
+  transition: 0.5s ease;
+  align-items: center;
+}
+.about .about-content .left a:hover{ /*animazione button- da sostituire con quella della HOME*/
+  color: #2b48ad;
+  background: none;
+}
+.box1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.box2  {
+padding-bottom: 50px;
+}
+
+
+
+/*right column*/
+.about .about-content .right {
+  width: 58.5%;
+}
+.about .about-content .right h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about .about-content .right p {
+  text-align: left;
+  white-space: wrap;
+  line-height: 1.7em; /*spaziatura interlinea*/
+}
+
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+
+
+/*COMPETENZE*/
+#title2 {
+  font-size: 40px;
+  text-align: center;/*relative*/
+  font-weight: 500;
+  padding-bottom: 15px;
+  padding-left: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.box3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  font-weight: 500;
+  padding-bottom: 50px;
+  align-items: center;
+  align-content: center;
+  padding-left: 68px;
+}
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 22px;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  /*font-size: 20px;
+  font-weight: 500;
+  align-items: center;
+  padding-left: 50px;*/
+}
+
+/*FOOTER STYLING dal video yputube*/
+footer {
+  font-family: "Poppins", sans-serif;
+  background-color: #141414;
+  padding: 20px 23px;
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+.footer-inner {
+    padding: 35px 30px;
+    box-sizing: border-box;
+    max-width: 1020px;
+    width: auto;
+    margin: auto;
+    box-sizing: border-box;
+}
+footer span a {
+    color: #2b48ad;
+    text-decoration: none;
+}
+.footer-block:not(.sqs-block-html):not(.sqs-block-markdown) { /*QUESTO VA BENE*/
+    clear: both;
+}
+.footer-block { /*QUESTA VA BENE E RESTA*/
+    position: relative;
+    height: auto;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+
+
+
+
+/*ADATTAMENTO MOBILE DEL FOOTER*/*
+@media only screen and (max-width: 640px)
+.footer-inner {
+    text-align: center;
+}
+@media only screen and (max-width: 640px)
+.footer-inner, .pre-footer-inner .sqs-layout {
+    padding: 20px;
+}

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=UnifrakturMaguntia&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.max-width  {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+/*FOTO DI BACKGROUND*/
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*NAVBAR*/
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999; /*per far restare la NAVBAR FISSA ANCHE DURANTE LO SCROLLING*/
+  background: #141414;
+  font-family: "Poppins", sans-serif;
+  padding: 15px 0;
+  margin: auto;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: /*uppercase*/;
+  font-size: 18px;
+  font-weight: 400;
+}
+/*ANIMAZIONE SOTTOLINEATURE ELEMENTI NAVBAR*/
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0; /*percentuale di quanto è mostrata la barra colorata sotto le parole*/
+  background: #2b48ad; /*light cobalto (20,52,164 RGB)*/
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+/*CONTENUTO PAGINA*/
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.content h1 {
+  font-size: 90px;
+  margin-top: -20px;
+  font-weight: 400;
+}
+.content p {
+  font-size: 20px;
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 30px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+  border: 2px solid #2b48ad; /*light cobalto*/
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 70px;
+  position: relative;
+  overflow: hidden;
+  font-size: 20px;
+}
+/*REMOVING HYPERLINK BLUE COLOR*/
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+#span1 {
+  background: #2b48ad; /*light cobaldo*/
+  height: 100%;
+  width: 0;
+  border-radius: 30px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.3s;
+}
+button:hover #span1{
+  width: 100%;
+}
+button:hover #span1{
+  border: none;
+}
+
+
+/*FOOTER STYLING dal video yputube*/
+footer {
+  font-family: "Poppins", sans-serif;
+  background-color: #141414;
+  padding: 20px 23px;
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+.footer-inner {
+    padding: 35px 30px;
+    box-sizing: border-box;
+    max-width: 1020px;
+    width: auto;
+    margin: auto;
+    box-sizing: border-box;
+}
+footer #span2 a {
+    color: #2b48ad;
+    text-decoration: none;
+}
+.footer-block:not(.sqs-block-html):not(.sqs-block-markdown) { /*QUESTO VA BENE*/
+    clear: both;
+}
+.footer-block { /*QUESTA VA BENE E RESTA*/
+    position: relative;
+    height: auto;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+
+
+
+
+/*ADATTAMENTO MOBILE DEL FOOTER*/
+@media only screen and (max-width: 640px)
+.footer-inner {
+    text-align: center;
+}
+@media only screen and (max-width: 640px)
+.footer-inner, .pre-footer-inner .sqs-layout {
+    padding: 20px;
+}

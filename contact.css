@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=UnifrakturMaguntia&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+/*NAVBAR MARGINS*/
+.max-width  {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+/*NAVBAR*/
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999; /*per far restare la NAVBAR FISSA ANCHE DURANTE LO SCROLLING*/
+  background: #141414;
+  font-family: "Poppins", sans-serif;
+  padding: 15px 0;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 500;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: /*uppercase*/;
+  font-size: 18px;
+  font-weight: 400;
+}
+/*ANIMAZIONE SOTTOLINEATURE ELEMENTI NAVBAR*/
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0; /*percentuale di quanto è mostrata la barra colorata sotto le parole*/
+  background: #2b48ad; /*light cobalto (20,52,164 RGB)*/
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+
+/*CONTACT-SECTION*/
+section {
+  padding: 100px 0 50px 0;
+  font-family: "Poppins", sans-serif; /*MAIN ROOT DEL FONT-stabilisce il font per tutta la section*/
+}
+.contact .title {
+  text-align: center;/*relative*/
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.contact .contact-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*LEFT COLUMN*/
+.contact .contact-content .column .left {
+  width: 50%;
+}
+.contact .contact-content .text {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.contact .contact-content .left .icons {
+  margin: 10px 0;
+}
+.contact .contact-content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact .contact-content .row .info {
+  padding: 0 0 0 40px;
+}
+.contact .contact-content .row i {
+  font-size: 25px;
+  color: #2b48ad; /*light cobalto*/
+}
+.contact .contact-content .info .head {
+  font-weight: 600;
+}
+.contact .contact-content .info .sub-title{
+  font-weight: 400;
+}
+
+/*.box1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }*/
+
+
+
+
+
+
+
+/*RIGHT COLUMN*/
+h1{
+  font-weight: 600;
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+.field input {
+  font-family: "Poppins";
+}
+.contact .right form .field {
+  display: flex;
+}
+.contact .right form .field,
+.contact .right form .field .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px; /*distanza tra i forms*/
+}
+.contact .right form .textarea {
+  height: 80px;
+  width: 100%;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 2px solid #2b48ad; /*light cobalto*/
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 18px;
+  font-family: "Poppins"- sans-serif;
+}
+.contact .right form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+
+.contact .right form .button button {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: inline-block;
+  background: #2b48ad; /*light cobalto*/
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 10px;
+  border-radius: 40px;
+  border: 2px solid #2b48ad;
+  transition: 0.5s ease;
+  font-family: "Poppins";
+}
+.contact .right form .button button:hover {
+  color: #2b48ad;
+  background: none;
+}
+.box1, .box2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.box1 {
+  font-size: 20px;
+}
+
+
+
+
+section {
+  padding: 100px 0 50px 0;
+}
+
+.title{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+p { /*user agent stylesheet*/
+    display: block;
+    margin-lock-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+/*FOOTER STYLING dal video yputube*/
+footer {
+  font-family: "Poppins", sans-serif;
+  background-color: #141414;
+  padding: 20px 23px;
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+.footer-inner {
+    padding: 35px 30px;
+    box-sizing: border-box;
+    max-width: 1020px;
+    width: auto;
+    margin: auto;
+    box-sizing: border-box;
+}
+footer span a {
+    color: #2b48ad;
+    text-decoration: none;
+}
+.footer-block:not(.sqs-block-html):not(.sqs-block-markdown) { /*QUESTO VA BENE*/
+    clear: both;
+}
+.footer-block { /*QUESTA VA BENE E RESTA*/
+    position: relative;
+    height: auto;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+
+
+
+
+/*ADATTAMENTO MOBILE DEL FOOTER*/
+@media only screen and (max-width: 640px)
+.footer-inner {
+    text-align: center;
+}
+@media only screen and (max-width: 640px)
+.footer-inner, .pre-footer-inner .sqs-layout {
+    padding: 20px;
+}
