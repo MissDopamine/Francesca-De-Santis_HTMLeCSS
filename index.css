@@ -124,7 +124,7 @@ button:hover #span1{
 }
 
 
-/*FOOTER STYLING dal video yputube*/
+/*FOOTER STYLING*/
 footer {
   font-family: "Poppins", sans-serif;
   background-color: #141414;
@@ -145,10 +145,10 @@ footer #span2 a {
     color: #2b48ad;
     text-decoration: none;
 }
-.footer-block:not(.sqs-block-html):not(.sqs-block-markdown) { /*QUESTO VA BENE*/
+.footer-block:not(.sqs-block-html):not(.sqs-block-markdown) {
     clear: both;
 }
-.footer-block { /*QUESTA VA BENE E RESTA*/
+.footer-block {
     position: relative;
     height: auto;
     padding-top: 17px;
@@ -157,14 +157,12 @@ footer #span2 a {
 
 
 
-
-
 /*ADATTAMENTO MOBILE DEL FOOTER*/
-@media only screen and (max-width: 640px)
+/*@media only screen and (max-width: 640px)
 .footer-inner {
     text-align: center;
 }
 @media only screen and (max-width: 640px)
 .footer-inner, .pre-footer-inner .sqs-layout {
     padding: 20px;
-}
+}*/

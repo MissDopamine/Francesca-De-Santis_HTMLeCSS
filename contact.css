@@ -113,21 +113,6 @@ section {
   font-weight: 400;
 }
 
-/*.box1 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 50px;
-  }*/
-
-
-
-
-
-
 
 /*RIGHT COLUMN*/
 h1{
@@ -259,11 +244,11 @@ footer span a {
 
 
 /*ADATTAMENTO MOBILE DEL FOOTER*/
-@media only screen and (max-width: 640px)
+//*@media only screen and (max-width: 640px)
 .footer-inner {
     text-align: center;
 }
 @media only screen and (max-width: 640px)
 .footer-inner, .pre-footer-inner .sqs-layout {
     padding: 20px;
-}
+}*/

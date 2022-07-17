@@ -130,25 +130,6 @@ h2 {
 }
 
 
-
-/*GRID CONTINER
-.grid-container {
-  background-color: #2b48ad;
-  display: grid;
-  grid-template-columns:  600px 600px; LERGHEZZA-dimensioni dell'immagine
-  grid-template-rows: 500px 500px;ALTEZZA
-  flex-wrap: wrap;
-  max-width:auto;
-
-}
-.grid-item {
-  flex-wrap: wrap;
-}/*
-
-
-
-
-
 /*FOOTER STYLING dal video yputube*/
 footer {
   font-family: "Poppins", sans-serif;
@@ -170,10 +151,10 @@ footer span a {
     color: #2b48ad;
     text-decoration: none;
 }
-.footer-block:not(.sqs-block-html):not(.sqs-block-markdown) { /*QUESTO VA BENE*/
+.footer-block:not(.sqs-block-html):not(.sqs-block-markdown) {
     clear: both;
 }
-.footer-block { /*QUESTA VA BENE E RESTA*/
+.footer-block {
     position: relative;
     height: auto;
     padding-top: 17px;
@@ -190,34 +171,13 @@ p {
 
 }
 
-/*h3 {
-    margin: 1em 0 0.5em;
-    font-weight: 600;
-    font-family: "Poppins";
-    font-style: normal;
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    line-height: 1.2em;
-    color: #fff;
-    display: block;
-font-size: 1.17em;
-margin-block-start: 1em;
-margin-block-end: 1em;
-margin-inline-start: 0px;
-margin-inline-end: 0px;
-font-weight: bold;
-}*/
-
-
-}
 
 /*ADATTAMENTO MOBILE DEL FOOTER*/
-@media only screen and (max-width: 640px)
+/*@media only screen and (max-width: 640px)
 .footer-inner {
     text-align: center;
 }
 @media only screen and (max-width: 640px)
 .footer-inner, .pre-footer-inner .sqs-layout {
     padding: 20px;
-}
+}*/

@@ -180,13 +180,9 @@ p {
   align-items: center;
   align-content: center;
   width: 100%;
-  /*font-size: 20px;
-  font-weight: 500;
-  align-items: center;
-  padding-left: 50px;*/
 }
 
-/*FOOTER STYLING dal video yputube*/
+/*FOOTER STYLING*/
 footer {
   font-family: "Poppins", sans-serif;
   background-color: #141414;
@@ -207,10 +203,10 @@ footer span a {
     color: #2b48ad;
     text-decoration: none;
 }
-.footer-block:not(.sqs-block-html):not(.sqs-block-markdown) { /*QUESTO VA BENE*/
+.footer-block:not(.sqs-block-html):not(.sqs-block-markdown) {
     clear: both;
 }
-.footer-block { /*QUESTA VA BENE E RESTA*/
+.footer-block {
     position: relative;
     height: auto;
     padding-top: 17px;
@@ -221,12 +217,12 @@ footer span a {
 
 
 
-/*ADATTAMENTO MOBILE DEL FOOTER*/*
-@media only screen and (max-width: 640px)
+/*ADATTAMENTO MOBILE DEL FOOTER*/
+/*@media only screen and (max-width: 640px)
 .footer-inner {
     text-align: center;
 }
 @media only screen and (max-width: 640px)
 .footer-inner, .pre-footer-inner .sqs-layout {
     padding: 20px;
-}
+}*/
